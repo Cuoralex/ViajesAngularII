@@ -12,4 +12,7 @@ export class ProductListComponent {
   share(product: Producto): void {
     window.alert('El producto ' + product.name + ' se ha compartido');
   }
+  onNotify(){
+    window.alert('Recibiras una notificación si el producto baja de precio')
+  }
 }
