@@ -1,11 +1,11 @@
-export interface Product {
+export interface Producto {
   id: number;
   name: string;
   price: number;
   description: string;
 }
 
-export const products = [
+export const productos = [
   {
     id: 1,
     name: 'Phone XL',
