@@ -8,14 +8,17 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    CommonModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      {path: 'products/:productId', component: ProductDetailsComponent}
+      { path: 'products/:productId', component: ProductDetailsComponent},
+      { path: 'cart', component: CartComponent}
     ])
   ],
   declarations: [
@@ -31,7 +34,7 @@ import { CartComponent } from './cart/cart.component';
   ]
 })
 export class AppModule { }
-
+export class CartModule { }
 
 /*
 Copyright Google LLC. All Rights Reserved.
